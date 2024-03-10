@@ -1,0 +1,146 @@
+Variables and Constants 
+
+In swift can use VAR or LET  -> var, let
+
+If the value not change use # var 
+If the valur will change use # let
+
+
+
+---------------------------------------------------
+
+// =======10/03/2024============
+
+// var myID1: Int = 1
+
+// myID1 = myID1 + 2
+
+// print(myID1)
+
+
+
+// ===============================End
+
+
+// var name = "Hour"
+// var age = 24
+// var isStident = false
+
+// var data : (String, Int, Bool) = ("Hour", 24, false)
+// var data2 : (name: String, age: Int, istudent:Bool) = ("Hour", 24, false)
+
+// print(data.0, data2.age)
+// print(data2.age)
+
+
+
+// ===============================End
+
+
+// let data = [1,2,3,4,5,6]
+
+// let a = 0..<5
+// let a = 0...5
+
+// print(data[a])
+
+
+
+// ===============================End
+
+
+
+// let number = 10
+
+// if number > 0 {
+//     print("The number is posstive") 
+// } else if number < 0 {
+//     print("The number is negative") 
+// } else {
+//     print("The number is zerp")
+// }
+
+
+
+// ===============================End
+
+
+
+// let grade = "B"
+
+// switch grade {
+
+//     case "A":
+//     print("Exellent!")
+// // fallthrough
+//     case "B":
+//     print("Good!")
+    
+//     case "C":
+//     print("Fail!")
+    
+//     default:
+//         print(
+//             "You neeed to stude more"
+//         )
+// }
+
+
+
+// ===============================End
+
+
+
+// enum Day {
+//     case monday
+//     case tuesday
+//     case wednesday
+//     case thurday
+//     case friday
+//     case saturday
+//     case sunday
+// }
+
+// let today = Day.monday
+// print("Today is \(today)")
+
+
+// ===============================End
+
+// let numbers = [ 1,2,3,4,5 ]
+
+// for number in numbers {
+//     print(numbers)
+// }
+
+
+// var count = 0
+
+// while count < 5 {
+//     print(count)
+//     count += 1
+// }
+
+
+// ===============================End
+
+
+
+// func addNumbers(_ number1: Int,_ number2: Int) -> Int {
+//     let sum = number1 + number2
+//     return sum
+// }
+
+// let x = addNumbers(22,3)
+// print(x)
+
+// addNumbers(30, 3)
+
+
+// ===============================End
+
+
+
+
+
+
