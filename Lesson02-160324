@@ -1,0 +1,233 @@
+16.03.24 | Lesson 02 |
+
+
+Swift - Structures and Classes
+
+
+
+// // Structures
+
+// struct Point {
+//     var x:Double
+//     var y:Double
+// }
+
+// var p1 = Point(x:0,y:0)
+// var p2 = p1
+
+// p2.x = 1
+// print(p1.x)
+// print(p2.x)
+
+
+// =============== End =====================
+
+
+// // Classes
+
+// class Person {
+//     var name : String
+
+//     init(name:String){
+//         self.name = name
+//     }
+// }
+
+// var p1 = Person (name: "Hour")
+// var p2 = p1
+
+// p2.name = "Test"
+// print(p1.name)
+// print(p2.name)
+
+
+
+// =============== End =====================
+
+// // Swift Methods
+
+// class MyClass {
+//     var value: Int
+
+//     init(value:Int){
+//         self.value = value
+//     }
+
+//     func instanceMethod(){
+//         print("Instance method called.Value:\(value)")   
+//     }
+//     static func staticMethod(){
+//         print("Static method called.")
+//     }
+// }
+
+
+// let myObject = MyClass(value:10)
+// myObject.instanceMethod()
+// MyClass.staticMethod()
+
+
+// =============== End =====================
+
+
+// // Overriding
+
+// class Vehicle{
+//     var numberOfWheels:Int
+
+//     init(numberOfWheels:Int){
+//         self.numberOfWheels = numberOfWheels
+//     }
+
+//     func staticEngine(){
+//         print("Engine started.")
+//     }
+// }
+
+// class Car:Vehicle{
+//     var brand:String
+
+//     init(brand:String){
+//         self.brand = brand
+//         super.init(numberOfWheels: 4)
+//     }
+
+//     override func staticEngine() {
+//         super.staticEngine()
+//         print("Car engine started")
+//     }
+// }
+
+// let myCar = Car(brand: "Toyota")
+// myCar.staticEngine()
+
+
+
+// =============== End =====================
+
+
+// Overriding Properties 
+
+class Supperclass {
+    var property:Int = 0
+}
+
+class Subclass:Supperclass{
+    var otherProperty:Int = 0
+    override var property: Int{
+        get {
+            // custom getter implementation
+            return super.property + 1
+        }
+        set {
+            // custom setter implementation
+            super.property = newValue * 2
+        }
+        // didSet {
+        //     otherProperty = property + 1
+        // }
+        
+    }
+}
+
+
+
+// =============== End =====================
+
+
+// // Getter and Setter keywords , Property observers
+
+// class Person{
+//     private var _name:String=""
+
+//     var name:String{
+//         get {
+//             return _name
+//         }
+//         set {
+//             _name = newValue
+//         }
+//     }
+// }
+
+// let person = Person()
+// person.name = "Hour"
+// print(person.name)
+
+
+// =============== End =====================
+
+
+// class Temperature {
+//     var test:Double = 0.0 {
+//         willSet {
+//             print("Setting temperature to \(newValue) degrees test")
+//         }
+//         didSet {
+//             print("Temperature changed from \(oldValue) to \(test) degrees test")
+//         }
+//     }
+// }
+
+// let temperature = Temperature()
+// temperature.test = 25.0
+
+// =============== End =====================
+
+
+// // Subclassing
+
+
+// class Vehicle {
+//     var numberOfWheels:Int
+
+//     init(numberOfWheels:Int){
+//         self.numberOfWheels = numberOfWheels
+//     }
+
+//     func startEngine(){
+//         print("Engine started")
+//     }
+// }
+
+// class Car:Vehicle {
+//     var brand:String
+
+//     init(brand:String){
+//         self.brand = brand
+//         super.init(numberOfWheels: 4)
+//     }
+
+//     func honk() {
+//         print("Honk honl!")
+//     }
+// }
+
+// let myCar = Car(brand: "Toyota")
+// myCar.startEngine()
+// myCar.honk()
+
+
+// =============== End =====================
+
+
+// // Swift Designated Initializers and vonvenience Initializers
+
+// class Person{
+//     var name : String
+//     var age : Int
+
+//     init(name:String, age:Int){
+//         self.name = name
+//         self.age = age
+//     }
+
+//     convenience init(name:String) {
+//         self.init(name: name, age: 0)
+//     }
+// }
+
+// let Hour = Person(name:"Hour", age: 24)
+// let Test = Person (name: "Test")
+
+// =============== End =====================
